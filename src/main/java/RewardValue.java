@@ -1,16 +1,10 @@
 public class RewardValue {
-    private double cashValue;
-    private double milesValue;
+    public double cashValue;
+    public double milesValue;
     // Constructor that accepts a cash value
     public RewardValue(double cashValue) {
         this.cashValue = cashValue;
         this.milesValue = convertToMiles(cashValue);
-    }
-
-    // Constructor that accepts a value in miles
-    public RewardValue(double milesValue, boolean isMiles) {
-        this.milesValue = milesValue;
-        this.cashValue = milesValue * 0.0035;
     }
 
     // Method to get the cash value of the RewardValue
